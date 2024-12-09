@@ -69,9 +69,7 @@
     "price" BIGINT NOT NULL CHECK (price > 0),
     PRIMARY KEY ("id")
 );
-    ...
-   ```
-   
+``` 
    
    
    
