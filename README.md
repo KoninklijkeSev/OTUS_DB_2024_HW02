@@ -69,8 +69,3 @@ CREATE TABLE "prices"(
     "product_id" BIGINT NOT NULL,
     "price" BIGINT NOT NULL CHECK (price > 0)
 );
-
-
-   
-   
-   
