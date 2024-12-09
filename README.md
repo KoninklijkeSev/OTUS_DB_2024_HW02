@@ -42,7 +42,7 @@
 2. Логические ограничения в БД.
 
    ```sql
-CREATE TABLE "products"(
+   CREATE TABLE "products"(
     "id" BIGINT UNIQUE NOT NULL,
     "category_id" BIGINT NOT NULL REFERENCES users ON ,
     "name" VARCHAR(255) NOT NULL,
@@ -51,12 +51,14 @@ CREATE TABLE "products"(
     "supplier_id" BIGINT NOT NULL,
     PRIMARY KEY ("id")
 );
-СREATE TABLE "categories"(
+
+   СREATE TABLE "categories"(
     "id" BIGINT UNIQUE NOT NULL,
     "name" VARCHAR(255) NOT NULL
     PRIMARY KEY ("id")
 );
-CREATE TABLE "manufacturers"(
+
+   CREATE TABLE "manufacturers"(
     "id" BIGINT NOT NULL,
     "name" VARCHAR(255) NOT NULL,
     "address" VARCHAR(255) NOT NULL,
@@ -64,8 +66,10 @@ CREATE TABLE "manufacturers"(
     "email" VARCHAR(255) NOT NULL
     PRIMARY KEY ("id")
 );
-CREATE TABLE "prices"(
+
+   CREATE TABLE "prices"(
     "id" BIGINT NOT NULL,
     "product_id" BIGINT NOT NULL,
     "price" BIGINT NOT NULL CHECK (price > 0)
 );
+'''
