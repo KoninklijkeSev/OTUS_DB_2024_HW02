@@ -63,14 +63,13 @@
     "email" VARCHAR(255) NOT NULL
     PRIMARY KEY ("id")
 );
-    ...
     CREATE TABLE "prices"(
     "id" BIGINT NOT NULL,
     "product_id" BIGINT NOT NULL,
     "price" BIGINT NOT NULL CHECK (price > 0),
     PRIMARY KEY ("id")
 );
-    
+    ...
    ```
    
    
