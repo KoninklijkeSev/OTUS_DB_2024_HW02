@@ -20,3 +20,4 @@
 ```sql
    CREATE INDEX idx_offers_area ON offers(area);
 ```
+фывыф
