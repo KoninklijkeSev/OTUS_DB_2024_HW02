@@ -17,6 +17,7 @@
 
 **Решение:**
 1. Создание дополнительных индексов.
+   
 ```sql
    CREATE INDEX idx_products_name_description ON products(name,description);
    ...
